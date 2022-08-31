@@ -17,8 +17,8 @@ int main() {
 
 	
 
-	if (password.size() <= 7 ) {
-		cout << "Your data is incomplete, password must be more than 7 characters"  << endl;
+	if (password.size() <= 8 ) {
+		cout << "Your data is incomplete, password must be more than 8 characters"  << endl;
 	}
 	else
 	{
