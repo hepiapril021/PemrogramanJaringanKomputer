@@ -5,8 +5,8 @@ using namespace std;
 int main() {
 	string username;
 	string password;
-	
-	cout << "==========REGISTRATION USER==========" << endl <<endl;
+
+	cout << "==========REGISTRATION USER==========" << endl << endl;
 
 	cout << "Create a Username : ";
 	cin >> username;
@@ -15,21 +15,12 @@ int main() {
 	cin >> password;
 	cout << endl;
 
-	
+		cout << "your data has been received by the server" << endl;
+		cout << "=========================================" << endl;
+		string Merge = username  +  password;
+		cout << Merge << endl
+			 << "(" << username.length() << ") <-- number of user letters"
+			 << " (" << password.length() << ") <-- number of password letters" << endl;
 
-	if (password.size() <= 8 ) {
-		cout << "Your data is incomplete, password must be more than 8 characters"  << endl;
-	}
-	else
-	{
-		cout << "your data has been received by the server"<< endl;
-		cout << "========================================="<<endl;
-		string Merge = username + password;
-		cout << Merge << endl;
-		cout << "(" << username.length() << ") <-- this is user" 
-			<< " (" << password.size() << ") <-- this is password" <<endl ;
-		
-	}
-	
 	return 0;
 }
