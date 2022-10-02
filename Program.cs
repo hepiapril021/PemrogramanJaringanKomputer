@@ -1,0 +1,25 @@
+﻿using System;
+using System.Numerics;
+using System.Linq;
+using System.Text;
+class Program
+{
+    static void Main(string[] args)
+    {
+        while (true)
+        {
+            int[] array = new int[24];
+            Decimal intVariable = 0;
+            intVariable++;
+            string output = intVariable.ToString().PadLeft(24, '0');
+
+            for (Decimal i = 0; i < 10000000000000000000; i++)
+            {
+                output = i.ToString().PadLeft(24, '0');
+                Console.WriteLine(output);
+            }
+            Console.ReadLine();
+        }
+
+    }
+}
